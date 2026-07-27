@@ -36,6 +36,9 @@ export default function Header() {
             <Link href="/free-quote" className="text-sm font-medium text-gray-900 hover:text-yellow-500 transition-colors">
               FREE QUOTE
             </Link>
+            <Link href="/blog" className="text-sm font-medium text-gray-900 hover:text-yellow-500 transition-colors">
+              BLOG
+            </Link>
             <Link href="/contact" className="text-sm font-medium text-gray-900 hover:text-yellow-500 transition-colors">
               CONTACT US
             </Link>
@@ -67,6 +70,7 @@ export default function Header() {
               <Link href="/about" className="text-sm font-medium text-gray-900 hover:text-yellow-500">ABOUT US</Link>
               <Link href="/services" className="text-sm font-medium text-gray-900 hover:text-yellow-500">SERVICES</Link>
               <Link href="/free-quote" className="text-sm font-medium text-gray-900 hover:text-yellow-500">FREE QUOTE</Link>
+              <Link href="/blog" className="text-sm font-medium text-gray-900 hover:text-yellow-500">BLOG</Link>
               <Link href="/contact" className="text-sm font-medium text-gray-900 hover:text-yellow-500">CONTACT US</Link>
               <a href="tel:+18189752332" className="text-sm font-medium text-yellow-500">(818) 975-2332</a>
             </div>
