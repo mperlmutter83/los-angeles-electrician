@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import LeadForm from '@/components/LeadForm';
 
 export default function Home() {
   const testimonials = [
@@ -204,34 +205,11 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-6">Fill out the form below to contact us</h3>
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              <LeadForm
+                  source="home-page"
+                  buttonLabel="Send Message"
+                  successMessage="Thanks! Your message was sent — we'll be in touch shortly."
                 />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
-                <input
-                  type="tel"
-                  placeholder="Your Phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
-                <textarea
-                  placeholder="Your Message"
-                  rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="bg-gray-900 text-white px-6 py-3 font-medium hover:bg-gray-800 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
             </div>
           </div>
         </div>

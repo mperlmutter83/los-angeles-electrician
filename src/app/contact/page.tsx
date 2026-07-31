@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import LeadForm from '@/components/LeadForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -22,34 +23,11 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
-                <input
-                  type="tel"
-                  placeholder="Your Phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
-                <textarea
-                  placeholder="Your Message"
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="bg-gray-900 text-white px-6 py-3 font-medium hover:bg-gray-800 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              <LeadForm
+                source="contact-page"
+                buttonLabel="Send Message"
+                successMessage="Thanks! Your message was sent — we'll be in touch shortly."
+              />
             </div>
 
             {/* Contact Info */}
