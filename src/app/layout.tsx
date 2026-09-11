@@ -27,6 +27,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* RFM site data - pushed before GTM loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  rfm: {
+    schema_version: "1.0",
+    site_id: "los_angeles_electrician",
+    provider_id: "40f6bd50-1dd6-4095-abae-03b475ac5fdf",
+    provider_name: "Los Angeles Electrician",
+    service_category: "electrician",
+    market: "los_angeles"
+  }
+});`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
