@@ -36,6 +36,7 @@ export default function Footer() {
               <Link href="/free-quote" className="block text-gray-600 hover:text-gray-900">Get a Free Quote</Link>
               <Link href="/services" className="block text-gray-600 hover:text-gray-900">Electrical Services</Link>
               <Link href="/contact" className="block text-gray-600 hover:text-gray-900">Send us a Message</Link>
+              <Link href="/looking-for-work" className="block text-gray-600 hover:text-gray-900">Looking for Work</Link>
             </div>
           </div>
         </div>
